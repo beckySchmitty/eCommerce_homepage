@@ -1,32 +1,33 @@
 /* DarkBlue: #253746 */
 /* DarkBrown: #544c44  */
 
-.container-h {
-    display: flex;
-    position: relative;
-    border: 1px solid black;
-    justify-content: space-around;
-    top: 50px;
-    box-sizing: border-box;
+/* ****************************************************************** */
+/* Berry: 38 85 62 38    |    115 48 60    |    #73303C
 
+Deep Ocean:  87 77 55 71    |    16 23 38    |    #101726
+
+Dirt: 38 58 69 20    |    140 100 77    |    #8C644D
+
+Breeze: 14 11 12 0    |    216 216 214   |    #D8D8D6
+
+
+Grass: 69 44 66 28    |    76 99 83    |    #4C6353 */
+
+/* ****************************************************************** */
+
+body {
+    font-family: 'Arial', sans-serif;
 }
-  
-.item {
-    /* background: #ce8888; */
-    width: 50%;
-    height: 500px;
-    /* margin: 5px; */
-    border: 1px solid blueviolet;
-    position: relative;
-}
 
 
-/* **************************************************Nav's */
+/* *********************************************************************************** NAVs */
+
 
 .sale-nav {
     display: relative;
     display: flex;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
+    background-color: #73303C;
     width: 100%;
     height: 30px;
     padding: 3px;
@@ -41,16 +42,68 @@
 }
 
 .main-nav {
-    background-color: #253746;
+    background-color: #101726;
     position: fixed;
     width: 100%;
     padding: 15px;
     display: flex;
     justify-content: space-around;
     box-sizing: border-box;
+    z-index: 9;
 }
 
 a {
     color: white;
     text-decoration: none;
+}
+
+
+/* ********************************************************************************HOME */
+.container-h {
+    display: flex;
+    position: relative;
+    border: 1px solid black;
+    justify-content: space-around;
+    top: 50px;
+    box-sizing: border-box;
+    background-color: #EFE4E6;
+
+}
+
+#home-h1 {
+    color: #73303C;
+    width: 20%;
+}
+  
+.item {
+    /* background: #ce8888; */
+    width: 50%;
+    height: 500px;
+    /* margin: 5px; */
+    border: 1px solid #5A6868;
+    position: relative;
+}
+
+#h-a {
+    width: 60%;
+}
+
+#h-b {
+    width: 40%;
+}
+
+/* **************************************************************************** HOME DIVS */
+
+.home-div {
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#h-d1 {
+    background-color: #101726;   
+
+}
+#h-d2 {
+    background-color: #73303C;
 }
