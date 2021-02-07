@@ -48,7 +48,7 @@ body {
     display: flex;
     justify-content: space-around;
     box-sizing: border-box;
-    z-index: 9;
+    z-index: 5;
 }
 
 a {
@@ -61,7 +61,7 @@ a {
 .container-h {
     display: flex;
     position: relative;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     justify-content: space-around;
     top: 50px;
     box-sizing: border-box;
@@ -84,7 +84,7 @@ a {
     width: 50%;
     height: 500px;
     /* margin: 5px; */
-    border: 1px solid #5A6868;
+    /* border: 1px solid #5A6868; */
     position: relative;
 }
 
@@ -94,6 +94,8 @@ a {
 
 #h-b {
     width: 60%;
+    /* flex-wrap: wrap; */
+
 }
 
 /* **************************************************************************** HOME DIVS */
@@ -136,3 +138,40 @@ p {
     background-color: #101726;  
     border-radius: 10px;
 }
+
+
+/* *******************************************************************************************HOME PHOTOS */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px;
+  }
+  
+  /* Create three equal columns that sits next to each other */
+  .column {
+    flex: 31%;
+    max-width: 31%;
+    padding: 2px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    height: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
